@@ -9,7 +9,7 @@ export default function EmailIcon() {
             href="mailto:geeorgewen@gmail.com"
             target="_blank"
             rel="noopener noreferrer">
-            <svg className="w-12 h-12 " viewBox="0 0 30 30 " fill="none" xmlns="http://www.w3.org/2000/svg"
+            <svg className="w-12 h-12 " viewBox="3 3  24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                  onMouseEnter={() => setIsHovered(true)}
                  onMouseLeave={() => setIsHovered(false)}>
                 <path

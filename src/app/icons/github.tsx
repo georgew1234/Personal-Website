@@ -9,7 +9,7 @@ export default function GithubIcon() {
             href="https://github.com/georgew1234"
             target="_blank"
             rel="noopener noreferrer">
-            <svg className="w-12 h-12 " viewBox="0 0 100 100"  xmlns="http://www.w3.org/2000/svg"
+            <svg className="w-12 h-12 " viewBox="-10 -10 120 120"  xmlns="http://www.w3.org/2000/svg"
                  onMouseEnter={() => setIsHovered(true)}
                  onMouseLeave={() => setIsHovered(false)}>
                 <path fill={isHovered ? "#fff" : "grey"}
