@@ -1,9 +1,8 @@
 import './globals.css';
 import { ReactNode } from 'react';
-import Image from 'next/image';
-import LinkedinIcon from "@/app/icons/linkedin";
-import GithubIcon from "@/app/icons/github";
-import EmailIcon from "@/app/icons/email";
+import LinkedinIcon from "@/app/components/icons/linkedin";
+import GithubIcon from "@/app/components/icons/github";
+import EmailIcon from "@/app/components/icons/email";
 export const metadata = {
     title: "George Wen's Personal Website",
     description: 'My personal website',
@@ -11,14 +10,15 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
     return (
-        <html lang="en" className="bg-gradient-to-r from-indigo-900 via-slate-900 to-zinc-900 text-white rounded">
-        <body className="text-zinc-300">
+        <html lang="en">
+        <body>
         <div className="fixed inset-0 -z-10 bg-gradient-to-r from-indigo-900 via-slate-900 to-zinc-900"/>
+        <div id="textColor">
         <header className="sticky top-0 p-4">
             <nav className="flex gap-4">
-                <a href="#">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#" className="text-solid">About</a>
+                <a href="#portfolio" className="text-solid">Portfolio</a>
+                <a href="#contact" className="text-solid">Contact</a>
             </nav>
         </header>
         <main className="p-8">{children}</main>
@@ -27,6 +27,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <GithubIcon/>
             <EmailIcon/>
         </footer>
+        </div>
         </body>
         </html>
     );
