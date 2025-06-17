@@ -3,9 +3,17 @@ import { ReactNode } from 'react';
 import LinkedinIcon from "@/app/components/icons/linkedin";
 import GithubIcon from "@/app/components/icons/github";
 import EmailIcon from "@/app/components/icons/email";
+import { Lexend } from 'next/font/google';
+
+const lexend = Lexend({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-lexend',
+});
 export const metadata = {
     title: "George Wen's Personal Website",
     description: 'My personal website',
+
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -13,12 +21,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <html lang="en">
         <body>
         <div className="fixed inset-0 -z-10 bg-gradient-to-r from-indigo-900 via-slate-900 to-zinc-900"/>
-        <div id="textColor">
+        <div className={`text-transparent bg-clip-text bg-gradient-to-r from-zinc-500 to-slate-400 ${lexend.className}`}>
         <header className="sticky top-0 p-4">
             <nav className="flex gap-4">
-                <a href="#" className="text-solid">About</a>
-                <a href="#portfolio" className="text-solid">Portfolio</a>
-                <a href="#contact" className="text-solid">Contact</a>
+                <a href="#" className="text-hover text-xl">About</a>
+                <a href="#portfolio" className="text-hover text-xl">Portfolio</a>
+                <a href="#contact" className="text-hover text-xl">Contact</a>
             </nav>
         </header>
         <main className="p-8">{children}</main>
