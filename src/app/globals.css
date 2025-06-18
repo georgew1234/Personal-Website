@@ -11,6 +11,6 @@ html {
 
 @layer utilities {
     .text-hover {
-        @apply text-zinc-500 hover:text-white;
+        @apply text-slate-400 hover:text-white;
     }
 }

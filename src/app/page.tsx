@@ -12,7 +12,7 @@ export default function Home() {
         <section id="about" className="py-16 max-w-3xl mx-auto">
           <About />
         </section>
-        <section id="portfolio" className="py-16 max-w-3xl mx-auto">
+        <section id="portfolio" className="py-16 max-w-5xl mx-auto">
           <Portfolio />
         </section>
         <section id="contact" className="py-16 max-w-3xl mx-auto">
