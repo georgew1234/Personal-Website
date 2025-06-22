@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <div className={`text-transparent bg-clip-text bg-gradient-to-r from-zinc-500 to-slate-400 ${lexend.className}`}>
         <header className="sticky top-0 p-4">
             <nav className="flex gap-4">
-                <a href="#" className="text-hover text-xl">About</a>
+                <a href="#about" className="text-hover text-xl">About</a>
                 <a href="#portfolio" className="text-hover text-xl">Portfolio</a>
                 <a href="#contact" className="text-hover text-xl">Contact</a>
             </nav>
